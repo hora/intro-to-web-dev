@@ -176,8 +176,12 @@ Keep the following tips in mind:
 
 ## References and further reading
 
+- [Nima Boscarino's w1d2 notes](https://github.com/NimaBoscarino/dev-workflow-notes)
+
 - [Why algorithms are called algorithms by BBC
   Ideas](https://www.youtube.com/watch?v=oRkNaF0QvnI)
+
+- [Exact instructions challenge PB&J by Josh Darnit](https://youtu.be/FN2RM-CHkuI)
 
 - _Introduction to the design & analysis of algorithms_ by Anany Levitin
 
