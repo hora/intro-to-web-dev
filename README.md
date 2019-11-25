@@ -91,8 +91,8 @@ Inputs          | Output
 
 Keep the following tips in mind:
 
-1. Don't start by going to your favourite search engine!  Start by writing down,
-perhaps as a comment in your code, what exactly you are looking for.
+1. Don't start by going to your favourite search engine! Start by writing down,
+   perhaps as a comment in your code, what exactly you are looking for.
 
    When we first learn how to code, it takes a lot of our brain power to
    understand other people's code. It's easy therefore to get lost in code we
@@ -118,7 +118,7 @@ perhaps as a comment in your code, what exactly you are looking for.
 
 
 4. Skip to the highest rated answer, or the one with the green checkmark (marked
-as the approved answer).
+   as the approved answer).
 
     Learning how to ask the right questions about programming is part of
     learning programming. This means that many questions asked by beginners
