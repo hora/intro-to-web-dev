@@ -5,40 +5,87 @@
 > arguments that are numbers, goes through each of them, and prints out their
 > sum.
 
-### Let's start with a simpler variation of the same problem
+### Let's break this problem down into a smaller one
 
-> Write a Node program that calculates the sum of all the numbers in a
-> hard-coded array, and prints it out.
+> Write a Node program that adds all the numbers in a
+> hard-coded list.
 
 #### Input
 
-- A hard-coded array of numbers
+- A hard-coded list of numbers.
 
 #### Output
 
-- A single number, which is the sum of all the numbers in the input
+- The sum of all the numbers in the hard-coded list added
+  together.
+
 
 #### Some test cases / examples
 
-Inputs          | Output
-----------------|-------
-1, 2, 3, 4, 5   | 15
-1, 2, 3, 4, -5  | 5
-10, 5, 10       | 25
-11, 0           | 11
-
+Input: 1, 2, 3, 4, 5    Output: 15
+Input: 5, 20            Output: 25
+Input: 11, 0            Output: 11
+Input: 1, -2            Output: -1
 
 #### Steps
 
-1. Prepare the input:
+1. Prepare the input and the result:
 
-    - Define a hard-coded array of numbers.
+    - define a hard-coded list of numbers (an array)
+    - define a variable to keep track of the running sum
 
-2. Calculate running sum using a loop:
-
-    - Declare a variable for storing the sum as it's being calculated.
-    - Loop over each number, adding it to the running sum.
+2. Loop over the list and calculate the running sum (using
+   a loop):
+    
+    - declare a variable for storing the exsiting sum +
+      the new number
+    - store that new sum in the running total of the sum
 
 3. Print output:
 
-    - Log the final sum to the console.
+    - logging the final sum to the console
+
+
+### Let's go back to the original more complicated problem
+
+> Write a Node program that takes in an unlimited number of command line
+> arguments that are numbers, goes through each of them, and prints out their
+> sum.
+
+### Input
+
+- an unlimited amount of numbers passed in from the
+  command line
+
+#### Output
+
+- The sum of all the numbers passed in from the command
+  line added together.
+
+
+#### Some test cases / examples
+
+Input: 1, 2, 3, 4, 5    Output: 15
+Input: 5, 20            Output: 25
+Input: 11, 0            Output: 11
+Input: 1, -2            Output: -1
+
+#### Steps
+
+1. Preparing the input and the running sum:
+
+    - get the numbers from the command line and store them
+      in a variable
+    - declare a variable to keep track of the running sum
+
+2. Loop over the list and calculate the running sum (using
+   a loop):
+    
+    - declare a variable for storing the exsiting sum +
+      the new number
+    - store that new sum in the running total of the sum
+
+3. Print output:
+
+    - logging the final sum to the console
+

@@ -1,34 +1,34 @@
-// --- getting and preparing the input ---
 
-let numbersStr = process.argv.slice(2);
+let args = process.argv;
 
-// 1. Create an empty value of the type of our result
+// 1. Created an empty value of the type of the result
+// we're interested in
 let numbers = [];
 
-for (let numberStr of numbersStr) {
-
-    // 2. Get the value we need to add to the result, from the loop variable
-    let number = Number(numberStr);
-
-    // 3. Update the result with the value from the previous step
-    numbers.push(number);
+for (let i = 2; i < args.length; i++) {
+    // 2. Get the value from each step of the loop and
+    // add it (push it) to the result
+    numbers.push(Number(args[i]));
 }
 
+// 3. Printed the result to the console
+// console.log(numbers);
 
-// --- calculating the sum ---
 
-// 1. Create an empty value of the type of our result
+// 1. Created an empty value of the type of the result
+// we're interested in
 let sum = 0;
 
-for (let number of numbers) {
+//for (let number of numbers) {
+    //sum = sum + number;
+//}
 
-    // 2. Get the value we need to add to the result, from the loop variable
-    let newTotal = sum + number;
-
-    // 3. Update the result with the value from the previous step
-    sum = newTotal;
+for (let i = 0; i < numbers.length; i++) {
+    // 2. Get the value from each step of the loop and
+    // add it (+ it) to the result
+    sum = sum + numbers[i]
 }
 
-// --- printing the output ---
-
+// 3. Printed the result to the console
 console.log(sum);
+
