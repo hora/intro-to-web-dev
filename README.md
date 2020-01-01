@@ -1,9 +1,19 @@
 # W1D2 - One Dev's Workflow
 
-## The LHL curriculum
+## What is web development?
 
-For an overview of the Lighthouse Labs curriculum, see these [Google
-slides](https://docs.google.com/presentation/d/1m3R_aN4S5YoCBmXRbjaZQGatygWyZXYLcN-fkcP_HWA/edit#slide=id.g167e960765_0_0)
+1. What are some examples of web apps you use in your day-to-day life?
+
+2. What makes <app> useful?
+
+3. What concerns do you have about using <app>, or if you don't use
+   it, why not?
+
+4. What is <app> made of? What is required to make <app> useful?
+
+5. Given our answers to questions 2-4, how might we define 'web app'?
+
+6. Given our answer to question 5, how might we define 'web development'?
 
 ## One of the most important core skills is defining algorithms
 
@@ -12,8 +22,8 @@ introduction to where the concept of the algorithm originates, and how it became
 applied to computer science.
 
 - The word algorithm is a latinized version of 8th century scholar Muhammad Ibn
-  Musa al-Khwarizmi's name.  Al-Kwharizmi made important contributions to
-  mathematics, astronomy, geography and cartography.  'Algorithm' initially
+  Musa al-Khwarizmi's name. Al-Kwharizmi made important contributions to
+  mathematics, astronomy, geography and cartography. 'Algorithm' initially
   referred to the foundations of the modern numerical system, but over time came
   to mean a series of steps to solving a problem. Mathematician Alan Turing, one
   of the first computer scientists, applied the concept to machines.
@@ -24,21 +34,41 @@ Here's a more formal definition by Anany Levitin:
 > problem, i.e., for obtaining a required output for any legitimate input in a
 > finite amount of time.
 
-For example, [step-by-step instructions for how to make a peanut butter and
-jelly sandwich](https://youtu.be/FN2RM-CHkuI?t=37).
-
 __Unambiguous:__ There should be no doubts about what each instruction means.
 This often requires that we break down all actions into very small and concrete
 steps.
 
-__Problem/required output:__ This is often one of the hardest parts of
-programming – understanding exactly what we're trying to get the computer to do.
 
-__Legitimate input:__ You can't make a PB&J sandwich if all you've got is bread,
-peanut butter, and batteries. The ingredients you start with matter.
+__Problem/required output:__ What, specifically, concretely, are we trying to
+accomplish? What problems are we trying to solve, and how do we define such that
+a computer can solve it?  What does correct output look like?
+
+This is often one of the hardest parts of programming – defining what exactly
+we're trying to get computers to do. That is, finding ways to interpret
+real-world situations so that we can make useful computations related to them.
+
+
+__Legitimate input:__ What kind of data is required to reach the required
+output? Where does this data come from, and how is it made computable?
+
 
 __Finite amount of time:__ The algorithm has to produce the desired output
 before the end of the universe.
+
+### Recipes are a form of day-to-day algorithm
+
+We're going to watch [a short video ](https://youtu.be/FN2RM-CHkuI?t=37) about
+following recipes for making peanut butter sandwiches.
+
+As we watch the video, think about the following:
+
+1. What are legitimate inputs to the recipes?
+
+2. What are legitimate outputs, that is, how do we know that the result of
+   following the recipe is 'correct'?
+
+3. Why did the recipes in the video produce incorrect outputs?
+
 
 ## Let's practice defining an algorithm and implementing it in Node.js
 
@@ -159,7 +189,6 @@ Keep the following tips in mind:
     written for more experienced programmers, so for the time being, you'll have
     more luck with Stack Overflow.
 
-
 4. Skip to the highest rated answer, or the one with the green checkmark (marked
    as the approved answer).
 
@@ -174,6 +203,12 @@ Keep the following tips in mind:
     You can learn a lot by watching how a more experienced developer makes sense
     of Stack Overflow or other resources.
 
+## The LHL curriculum
+
+For an overview of the Lighthouse Labs curriculum, see these [Google
+slides](https://docs.google.com/presentation/d/1m3R_aN4S5YoCBmXRbjaZQGatygWyZXYLcN-fkcP_HWA/edit#slide=id.g167e960765_0_0)
+
+
 ## References and further reading
 
 - [Nima Boscarino's w1d2 notes](https://github.com/NimaBoscarino/dev-workflow-notes)
@@ -182,6 +217,8 @@ Keep the following tips in mind:
   Ideas](https://www.youtube.com/watch?v=oRkNaF0QvnI)
 
 - [Exact instructions challenge PB&J by Josh Darnit](https://youtu.be/FN2RM-CHkuI)
+
+- [A blog post on why we should teach/learn programming by Mark Guzdial](https://computinged.wordpress.com/2017/10/18/why-should-we-teach-programming-hint-its-not-to-learn-problem-solving/)
 
 - _Introduction to the design & analysis of algorithms_ by Anany Levitin
 

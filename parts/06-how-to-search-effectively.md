@@ -28,7 +28,6 @@ Keep the following tips in mind:
     written for more experienced programmers, so for the time being, you'll have
     more luck with Stack Overflow.
 
-
 4. Skip to the highest rated answer, or the one with the green checkmark (marked
    as the approved answer).
 

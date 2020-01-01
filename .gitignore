@@ -1,3 +1,4 @@
 parts/00-intro.md
 parts/01-why-learn-programming.md
-lesson-plan*
+lesson-planning/notes.md
+lesson-planning/*.pdf
