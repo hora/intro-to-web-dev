@@ -1,4 +1,4 @@
-# W1D2 - One Dev's Workflow
+# W1D2 - A Developer's Workflow
 
 ## What is web development?
 
