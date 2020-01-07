@@ -1,46 +1,58 @@
 
-## Returning to the original problem
+## Let's solve a problem
 
 > Write a Node program that takes in an unlimited number of command line
 > arguments that are numbers, goes through each of them, and prints out their
 > sum.
 
-### Let's break the problem down again
+### Let's break the problem down
+
+- this will run in the terminal
 
 #### Inputs
 
-- An unlimited amount of numbers that are passed in from the command line
+- unlimited amount of numbers that will come from the
+  command line
 
-- Stretch: What should happen if no numbers are given?
-- Stretch: What should happen if the arguments passed in aren't numbers?
+- stretch: what should happen if some of the inputs (or
+  all of them) are not numbers?
+- stretch: what if some of the inputs are numbers, but not
+  numbers that we can work with in JS? (for instance, some
+  really really really big number)
 
 #### Output
 
-- A single number, which is the sum of all the numbers in the input
+- a single number (the sum of all the inputted numbers)
+- we want to print this number to the console, which means
+  it'll need to become a string at some point
 
-#### Some test cases / examples
+Inputs | Output
 
-Inputs          | Output
-----------------|-------
-1, 2, 3, 4, 5   | 15
-1, 2, 3, 4, -5  | 5
-10, 5, 10       | 25
-11, 0           | 11
-
+1 2 3       6
+10 5        15
+10 -5       5
+0           0
 
 #### Steps
 
-1. Get and prepare input:
+1. Get input from the command line (from the user), and
+   prepare it for calculating:
 
-    - Get all numbers passed in as command line arguments – these will be
-      strings.
-    - Convert all the numbers as strings to numbers as integers.
+   - get all of the arguments passed to the command line,
+     isolate just the arguments we're interested in
+   - convert all those arguments from string to number
 
-2. Calculate running sum using a loop
+2. Calculate the running sum using a loop:
+   
+   - declare a accumulator variable (where we're going to
+     store the result as we're calculating the sum)
+   - loop over all the inputted numbers, and add them to
+     the accumulator variable
 
-    - Declare a variable for storing the sum as it's being calculated.
-    - Loop over each number, adding it to the running sum.
+3. Print the result
+   
+   - log the calculated sum to the console
 
-3. Print output
 
-    - Log the final sum to the console.
+
+

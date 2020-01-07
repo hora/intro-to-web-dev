@@ -29,14 +29,6 @@ output? Where does this data come from, and how is it made computable?
 __Finite amount of time:__ The algorithm has to produce the desired output
 before the end of the universe.
 
-
-
-
-
-
-
-
-
 ### Recipes are a form of day-to-day algorithm
 
 We're going to watch a short video about following recipes for making peanut

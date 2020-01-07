@@ -1,34 +1,30 @@
-// --- getting and preparing the input ---
+//1. Get input from the command line (from the user), and
+   //prepare it for calculating:
 
-let numbersStr = process.argv.slice(2);
+let userInput = process.argv.slice(2);
 
-// 1. Create an empty value of the type of our result
 let numbers = [];
 
-for (let numberStr of numbersStr) {
+// for ... of loop
+for (let inputString of userInput) {
+    // as i convert each inputted string to a number, i
+    // will save it in the numbers array
+    let number = Number(inputString);
 
-    // 2. Get the value we need to add to the result, from the loop variable
-    let number = Number(numberStr);
-
-    // 3. Update the result with the value from the previous step
-    numbers.push(number);
+    if (!isNaN(number)) {
+        numbers.push(number);
+    }
 }
 
+//2. Calculate the running sum using a loop:
 
-// --- calculating the sum ---
-
-// 1. Create an empty value of the type of our result
 let sum = 0;
 
 for (let number of numbers) {
-
-    // 2. Get the value we need to add to the result, from the loop variable
-    let newTotal = sum + number;
-
-    // 3. Update the result with the value from the previous step
-    sum = newTotal;
+    sum = sum + number;
+    // sum += number;
+    // x += y; is the same as x = x + y;
 }
 
-// --- printing the output ---
-
 console.log(sum);
+
