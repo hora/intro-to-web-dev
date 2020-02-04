@@ -5,54 +5,65 @@
 > arguments that are numbers, goes through each of them, and prints out their
 > sum.
 
-### Let's break the problem down
+### Let's break that down first
 
-- this will run in the terminal
+#### Input
 
-#### Inputs
+- numbers (unlimited amount)
+    - a large amount not defined explicitly by the program (user chooses)
 
-- unlimited amount of numbers that will come from the
-  command line
+- stretch: what should the program do if no numbers are given?
+    - return 0
+    - nothing is not 0, so maybe ask the user to enter something
 
-- stretch: what should happen if some of the inputs (or
-  all of them) are not numbers?
-- stretch: what if some of the inputs are numbers, but not
-  numbers that we can work with in JS? (for instance, some
-  really really really big number)
+- stretch: what should the program do if the users enters something that is not
+  a number?
+    - ask the user to enter a number
+    - try to coerce the value into a number first
+    - ignore it, skip that one
 
-#### Output
+#### Expected output
 
-- a single number (the sum of all the inputted numbers)
-- we want to print this number to the console, which means
-  it'll need to become a string at some point
+- a single number representing the sum of all the valid inputs
+- a message letting the user know what the sum is
 
-Inputs | Output
+__Some test cases / examples__:
 
-1 2 3       6
-10 5        15
-10 -5       5
-0           0
+Inputs      | Output
+--------------------
+1, 2, 3         6
+-1, 30          29
+0               0
+[no input]      "Hey, you need numbers to get a sum"
+-5, 5           0
+3.5, 2.6        6.1
 
-#### Steps
+stretch:
+one, 2, 3       5 (because we skip the 'one')
+htg, error      "Hey, you need numbers to get a sum"
+'1', '2', '3'   6? maybe "Hey, you need numbers..."
+1/2, 1/2        1? maybe "Hey, you need whole numbers ..."
+some really big number, and its sum...
 
-1. Get input from the command line (from the user), and
-   prepare it for calculating:
+### Steps (algorithm)
 
-   - get all of the arguments passed to the command line,
-     isolate just the arguments we're interested in
-   - convert all those arguments from string to number
+1. Get and prepare the input
+    - fetch the numbers passed in by the user to the command line – these will
+      be strings (in Node)
 
-2. Calculate the running sum using a loop:
-   
-   - declare a accumulator variable (where we're going to
-     store the result as we're calculating the sum)
-   - loop over all the inputted numbers, and add them to
-     the accumulator variable
+1.5. If no input, display a message to the user, otherwise do steps 2 to 4.
 
-3. Print the result
-   
-   - log the calculated sum to the console
+2. Convert the user's argumnets to numbers
+    - declare an accumulator variable to keep track of the converted arguments –
+      an array
+    - for each one, convert the string to number and push it to the accumulator
+      variable
 
+3. Calculate the sum
+    - declare an accumulator variable to keep track of the running sum
+    - for each number, we add it to the accumulator variable
+
+4. Print output
 
 
 

@@ -1,5 +1,11 @@
 # W1D2 - A Developer's Workflow
 
+## Code examples
+
+For the code we built in class, see [sum.js](sum.js). For a refactored version
+that implements some of the stretch (and that has more comments about the code),
+see [sum-refactored.js](sum-refactored.js).
+
 ## What is web development?
 
 1. What are some examples of web apps you use in your day-to-day life?
