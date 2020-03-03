@@ -5,65 +5,61 @@
 > arguments that are numbers, goes through each of them, and prints out their
 > sum.
 
-### Let's break that down first
+### Let's break the problem down
 
-#### Input
+#### What are the inputs?
 
-- numbers (unlimited amount)
-    - a large amount not defined explicitly by the program (user chooses)
+- an unlimited amount of numbers
+    - an unknown big number but less than infinity
+    - less than whatever the biggest number our computer can handle...
 
-- stretch: what should the program do if no numbers are given?
-    - return 0
-    - nothing is not 0, so maybe ask the user to enter something
+- the numbers will come from the command line
+    - these will be typed/inputted by the user
+    - users will be asked for numbers, but can type whatever
 
-- stretch: what should the program do if the users enters something that is not
-  a number?
-    - ask the user to enter a number
-    - try to coerce the value into a number first
-    - ignore it, skip that one
+- legitimate inputs: are numbers
+    - can be + / -
+    - can be whole numbers, if they're floats
 
-#### Expected output
+- stretch: what do we do if the user types in something that isn't a number?
 
-- a single number representing the sum of all the valid inputs
-- a message letting the user know what the sum is
+- stretch: what if the users types nothing? if we have no numbers at all?
 
-__Some test cases / examples__:
+#### What are some correct outputs?
 
-Inputs      | Output
---------------------
-1, 2, 3         6
--1, 30          29
-0               0
-[no input]      "Hey, you need numbers to get a sum"
--5, 5           0
-3.5, 2.6        6.1
+- a sum of all the numbers
+    - a single number
 
-stretch:
-one, 2, 3       5 (because we skip the 'one')
-htg, error      "Hey, you need numbers to get a sum"
-'1', '2', '3'   6? maybe "Hey, you need numbers..."
-1/2, 1/2        1? maybe "Hey, you need whole numbers ..."
-some really big number, and its sum...
+Inputs       | Output
+-------------|-------
+30, 50       | 80
+1, 2, 3      | 6
+-5, 5        | 0
+0            | 0
+1.5, 6       | 7.5
 
-### Steps (algorithm)
+### Steps
 
-1. Get and prepare the input
-    - fetch the numbers passed in by the user to the command line – these will
-      be strings (in Node)
+1. Get the input
+    
+    - grab all the arguments passed to the command line
 
-1.5. If no input, display a message to the user, otherwise do steps 2 to 4.
+2. Prepare the input
 
-2. Convert the user's argumnets to numbers
-    - declare an accumulator variable to keep track of the converted arguments –
-      an array
-    - for each one, convert the string to number and push it to the accumulator
-      variable
+    - convert all the arguments from string to number
+
+    - declare an array to keep track of the converted numbers
+
+    - loop through all the numbers (as strings)
+        - convert each string to a number
+        - store them in the array we're using to hold them all
 
 3. Calculate the sum
-    - declare an accumulator variable to keep track of the running sum
-    - for each number, we add it to the accumulator variable
 
-4. Print output
+    - declare a variable to keep track of the sum
 
+    - loop through all the numbers
+        - add that number to the running total for the sum
 
+4. Print the final sum to the console
 
