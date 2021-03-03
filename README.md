@@ -4,12 +4,12 @@
 
 1. What are some examples of web apps you use in your day-to-day life?
 
-2. What makes <app> useful?
+2. What makes [example app] useful?
 
-3. What concerns do you have about using <app>, or if you don't use
+3. What concerns do you have about using [example app], or if you don't use
    it, why not?
 
-4. What is <app> made of? What is required to make <app> useful?
+4. What is [example app] made of? What is required to make [example app] useful?
 
 5. Given our answers to questions 2-4, how might we define 'web app'?
 
