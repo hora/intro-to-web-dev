@@ -1,5 +1,8 @@
 # W1D2 - A Developer's Workflow
 
+_Note: This repo contains the lecture notes and code examples for a lecture
+I prepared for Lighthouse Labs (W1D2)._
+
 ## What is web development?
 
 1. What are some examples of web apps you use in your day-to-day life?
